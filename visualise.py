@@ -1,8 +1,8 @@
 import pandas as pd
 import admsearch
 
-with open('listabit.txt', 'r') as la:
-    names = la.read().splitlines()
+with open('listabit.txt', 'r') as al:
+    names = al.read().splitlines()
 html = ""
 for name in names:
     table = admsearch.search_by_name(name)
